@@ -208,6 +208,8 @@ Prediction Generation
 
 ---
 
+https://github.com/akkikoomar27/health-risk-prediction-catboost/blob/main/Predicting_Student_Health_Risk.ipynb
+
 ## 👨‍💻 Author
 
 Akhilesh Yadav
