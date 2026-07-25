@@ -249,11 +249,7 @@ health-risk-prediction-catboost/
 ├── sample_submission.csv
 ├── test.csv
 │
-└── screenshots/
-    ├── 06_model_training.png
-    ├── 07_feature_importance.png
-    ├── 08_prediction_output.png
-    └── 09_submission_distribution.png
+
 ```
 
 ---
