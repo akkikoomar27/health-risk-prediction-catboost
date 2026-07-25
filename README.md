@@ -1,20 +1,8 @@
 # 🏥 Health Risk Prediction Using Machine Learning
 
-## 📖 Project Overview
+Welcome to the **Health Risk Prediction** project! This repository contains an end-to-end machine learning solution that predicts an individual's health condition using lifestyle, wellness, and physiological indicators.
 
-This project focuses on predicting an individual's health condition based on lifestyle and wellness indicators such as:
-
-- Sleep Duration
-- Heart Rate
-- BMI
-- Diet Type
-- Stress Level
-- Physical Activity
-- Exercise Duration
-- Water Intake
-- Smoking & Alcohol Habits
-
-The goal is to classify people into:
+The model classifies individuals into:
 
 ✅ Fit
 
@@ -22,81 +10,111 @@ The goal is to classify people into:
 
 🚨 Unhealthy
 
-using Machine Learning and Feature Engineering techniques.
+using advanced data preprocessing, feature engineering, and CatBoost Classification.
 
 ---
 
-## 🎯 Business Problem
+# 🚀 Project Overview
 
-Healthcare organizations and wellness platforms collect large amounts of lifestyle data.
+Healthcare organizations collect large amounts of wellness and lifestyle data. Identifying health risks early can help individuals improve their quality of life and prevent future health complications.
 
-Identifying individuals at risk of future health problems enables early intervention and personalized wellness recommendations.
+This project analyzes factors such as:
 
-This project develops a predictive analytics solution capable of automatically categorizing individuals based on health risk.
+- Sleep Duration
+- Heart Rate
+- BMI
+- Stress Level
+- Physical Activity
+- Exercise Duration
+- Water Intake
+- Diet Type
+- Smoking & Alcohol Habits
+- Sleep Quality
 
----
-
-## 📊 Dataset Information
-
-| Metric | Value |
-|----------|---------|
-| Records | 93,300 |
-| Features | 20 |
-| Target Classes | 3 |
-| Domain | Healthcare Analytics |
-
-### Target Variable
-
-- Fit
-- At-Risk
-- Unhealthy
+and predicts an individual's overall health condition.
 
 ---
 
-## 🛠 Tech Stack
+# 📊 Dataset Information
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- CatBoost
-- Google Colab
+Dataset Characteristics:
+
+- Records: **93,300+**
+- Features: **20**
+- Target Variable: **Health Condition**
+
+Target Classes:
+
+```text
+Fit
+At-Risk
+Unhealthy
+```
 
 ---
 
-## 🔍 Exploratory Data Analysis
+# 📖 Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/akkikoomar27/health-risk-prediction-catboost.git
+
+cd health-risk-prediction-catboost
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the notebook
+
+Open:
+
+```text
+Predicting_Student_Health_Risk.ipynb
+```
+
+in Google Colab, Jupyter Notebook, or VS Code.
+
+---
+
+# 🔍 Exploratory Data Analysis
 
 Performed:
 
 - Missing Value Analysis
-- Duplicate Detection
-- Statistical Summary
-- Distribution Analysis
+- Duplicate Record Detection
+- Numerical Feature Analysis
+- Categorical Feature Analysis
 - Outlier Detection
-- Class Distribution Analysis
-- Bivariate Analysis
+- Target Variable Analysis
+- Health Risk Relationship Analysis
 
-Key findings:
+### Key Findings
 
-- Stress Level strongly influences health status.
-- Sleep Duration is one of the most important predictors.
-- Physical Activity impacts overall health outcomes.
-- BMI has significant predictive importance.
+- Stress Level significantly impacts health condition.
+- Sleep Duration is one of the strongest predictive variables.
+- Active individuals tend to have healthier outcomes.
+- BMI and Heart Rate contribute strongly to risk classification.
+- Poor sleep quality increases health risk probability.
 
 ---
 
-## ⚙️ Feature Engineering
+# ⚙️ Feature Engineering
 
-Created custom healthcare indicators:
+Custom healthcare features were created to improve model performance.
 
 ### BMI Category
 
-- Underweight
-- Normal
-- Overweight
-- Obese
+```text
+Underweight
+Normal
+Overweight
+Obese
+```
 
 ### Activity Score
 
@@ -130,96 +148,153 @@ water_intake / exercise_duration
 
 ---
 
-## 🤖 Machine Learning Model
+# 🤖 Machine Learning Model
 
-Model Used:
+Algorithm Used:
 
-✅ CatBoost Classifier
+```text
+CatBoost Classifier
+```
 
-Parameters:
+Model Parameters:
 
 ```python
-iterations=300
-learning_rate=0.1
-depth=6
-loss_function='MultiClass'
+iterations = 300
+learning_rate = 0.1
+depth = 6
+loss_function = "MultiClass"
+eval_metric = "TotalF1"
 ```
 
 ---
 
-## 📈 Results
+# 📈 Results
 
 | Metric | Value |
 |----------|----------|
-| Algorithm | CatBoost |
+| Dataset Size | 93,300+ Records |
+| Algorithm | CatBoost Classifier |
 | Classes | 3 |
 | Best Iteration | 266 |
 | Validation F1 Score | 96.74% |
 
----
+### Prediction Distribution
 
-## 🔥 Most Important Features
-
-Feature importance analysis identified:
-
-1. Stress Level
-2. Sleep Duration
-3. Physical Activity Level
-4. BMI
-5. Heart Rate
-6. Smoking & Alcohol Habits
-
-These variables contributed most to health-condition prediction.
+```text
+At-Risk      : 122,302
+Unhealthy    : 9,402
+Fit          : 7,139
+```
 
 ---
 
-## 📂 Project Workflow
+# 📊 Feature Importance
 
-Data Collection
-↓
-Data Cleaning
-↓
-Missing Value Treatment
-↓
-EDA
-↓
-Feature Engineering
-↓
-Data Validation
-↓
-Train Validation Split
-↓
-CatBoost Model Training
-↓
-Feature Importance Analysis
-↓
-Prediction Generation
+Top influential features identified by CatBoost:
+
+- Stress Level
+- Sleep Duration
+- Physical Activity Level
+- BMI
+- Heart Rate
+- Smoking & Alcohol Habits
+
+These factors played a major role in determining an individual's health risk classification.
 
 ---
 
-## 📌 Future Improvements
+# 📸 Project Outputs
 
-- Hyperparameter tuning
-- XGBoost comparison
-- LightGBM implementation
-- SHAP Explainability
-- Streamlit Web App
-- Real-Time Prediction Dashboard
+## Model Training Performance
+
+Upload: `06_model_training.png`
+
+## Feature Importance Analysis
+
+Upload: `07_feature_importance.png`
+
+## Prediction Output
+
+Upload: `08_prediction_output.png`
+
+## Submission Distribution
+
+Upload: `09_submission_distribution.png`
 
 ---
-## 🔗 Notebooks
 
-https://github.com/akkikoomar27/health-risk-prediction-catboost/blob/main/Predicting_Student_Health_Risk.ipynb
+# 🎯 Features
 
-## 🤝 Contributing
+- End-to-End Machine Learning Workflow
+- Data Cleaning & Preprocessing
+- Missing Value Handling
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- CatBoost Multiclass Classification
+- Feature Importance Analysis
+- Health Risk Prediction
+- Prediction Export to CSV
 
-Contributions are welcome! Feel free to fork the repo, open issues, or submit pull requests to improve the project.
+---
 
-## 👨‍💻 Author
+# 🛠 Technologies Used
 
-Akhilesh Yadav
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- CatBoost
+- Google Colab
+
+---
+
+# 📂 Project Structure
+
+```text
+health-risk-prediction-catboost/
+
+│
+├── README.md
+├── Predicting_Student_Health_Risk.ipynb
+├── sample_submission.csv
+├── test.csv
+│
+└── screenshots/
+    ├── 06_model_training.png
+    ├── 07_feature_importance.png
+    ├── 08_prediction_output.png
+    └── 09_submission_distribution.png
+```
+
+---
+
+# 📚 Notebook
+
+- Predicting_Student_Health_Risk.ipynb
+
+---
+
+# 👨‍💻 Author
+
+**Akhilesh Yadav**
 
 Data Analyst | Data Scientist
 
-Skills:
-Python | SQL | Power BI | Machine Learning | Snowflake | SSIS | Azure SQL
+### Skills
+
+- Python
+- SQL
+- Power BI
+- Machine Learning
+- Snowflake
+- SSIS
+- Azure SQL
+
+GitHub:
+https://github.com/akkikoomar27
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
