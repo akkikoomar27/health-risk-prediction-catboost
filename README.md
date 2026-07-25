@@ -211,6 +211,10 @@ Prediction Generation
 
 https://github.com/akkikoomar27/health-risk-prediction-catboost/blob/main/Predicting_Student_Health_Risk.ipynb
 
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo, open issues, or submit pull requests to improve the project.
+
 ## 👨‍💻 Author
 
 Akhilesh Yadav
