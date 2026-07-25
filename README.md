@@ -69,19 +69,6 @@ cd health-risk-prediction-catboost
 pip install -r requirements.txt
 ```
 
-### 3. Run the notebook
-
-Open:
-
-```text
-Predicting_Student_Health_Risk.ipynb
-```
-
-## 🔗 Notebooks
-
-(https://github.com/akkikoomar27/health-risk-prediction-catboost/blob/main/Predicting_Student_Health_Risk.ipynb)
----
-
 # 🔍 Exploratory Data Analysis
 
 Performed:
@@ -273,8 +260,8 @@ health-risk-prediction-catboost/
 
 # 📚 Notebook
 
-- Predicting_Student_Health_Risk.ipynb
-
+[- Predicting_Student_Health_Risk.ipynb
+](https://github.com/akkikoomar27/health-risk-prediction-catboost/blob/main/Predicting_Student_Health_Risk.ipynb)
 ---
 
 # 👨‍💻 Author
