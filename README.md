@@ -1,13 +1,5 @@
 # 🏥 Health Risk Prediction Using Machine Learning
 
-https://img.shields.io/badge/Python-3.10-blue
-https://img.shields.io/badge/Pandas-Data%20Analysis-orange
-https://img.shields.io/badge/NumPy-Numerical%20Computing-blue
-https://img.shields.io/badge/Seaborn-Visualization-green
-https://img.shields.io/badge/Machine%20Learning-CatBoost-red
-
----
-
 ## 📖 Project Overview
 
 This project focuses on predicting an individual's health condition based on lifestyle and wellness indicators such as:
