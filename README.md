@@ -77,8 +77,9 @@ Open:
 Predicting_Student_Health_Risk.ipynb
 ```
 
-in Google Colab, Jupyter Notebook, or VS Code.
+## 🔗 Notebooks
 
+(https://github.com/akkikoomar27/health-risk-prediction-catboost/blob/main/Predicting_Student_Health_Risk.ipynb)
 ---
 
 # 🔍 Exploratory Data Analysis
